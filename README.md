@@ -94,16 +94,33 @@ Wireframes / Mockups
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Architektur
 
-Die Applikation folgt einer Layered Architecture mit klarer Trennung von Verantwortlichkeiten:
-Presentation Layer (NiceGUI Pages)
-    ↓
-Application Layer (main.py)
-    ↓
-Business Logic Layer (services.py)
-    ↓
-Data Access Layer (models.py, db.py, auth.py)
-    ↓
-Database Layer (SQLite via SQLModel)
+```text
+pizza_app/
+├── __init__.py
+├── __main__.py
+├── application.py
+├── data_access/
+│   ├── __init__.py
+│   ├── dao.py
+│   ├── db.py
+│   └── seed.py
+│
+├── domain/
+│   ├── __init__.py
+│   └── models.py
+│
+├── services/
+│   ├── __init__.py
+│   ├── invoice_service.py
+│   ├── order_service.py
+│   ├── pizza_service.py
+│   └── pricing_service.py
+│
+└── ui/
+    ├── __init__.py
+    ├── controllers.py
+    └── pages.py
+```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🗄️ Database and ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
