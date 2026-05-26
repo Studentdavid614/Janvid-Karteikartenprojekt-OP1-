@@ -1,4 +1,4 @@
-![image_URL](C:\Users\David Lienhardt\Downloads\Bild.png)
+![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild.png?raw=true)
 
 # OP1-Karteikarten
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
