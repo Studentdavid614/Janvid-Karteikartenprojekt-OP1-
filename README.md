@@ -73,7 +73,8 @@ ALs Benutzer willich nachdem meine alten Karteikarten gelöscht bzw. bearbeitet 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🧩 Use Cases
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-![Use Cases Karteikarten](images/use-cases.png)
+![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20USE%20CASES.png?raw=true)
+
 Main cases:
 - View Mainfunctions
   - Karteikarte Hinzufügen
