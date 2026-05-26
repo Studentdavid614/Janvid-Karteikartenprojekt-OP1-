@@ -125,6 +125,6 @@ pytest-cov – coverage
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 👥 Team & Contributions
 
-- David  NiceGUI UI + documentation
-- Jana 	 Database & ORM + documentation
+- David   Nice GUI-Frontend, Routing, PDF-Export, Statistik Dashboard
+- Jana 	 Datenmodellierung, Service-Layer, Authentifizierung, Test-Framework
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
