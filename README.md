@@ -175,6 +175,7 @@ Speichert Benutzerinformationen mit gehashtem Passwort.
 - email: Eindeutig für Registrierung
 - password_hash: BCrypt Hash, niemals Klartext speichern!
 - created_at: Audit-Trail
+
 Beziehungen:
 
 - 1:N CardSets (Ersteller)
@@ -188,6 +189,7 @@ Gruppiert zusammenhängende Karteikarten.
 - creator_id: Foreign Key zu User
 - visibility: ENUM(PRIVATE, PUBLIC)
 - created_at, updated_at: Audit-Trail
+
 Beziehungen:
 
 - N:1 User (Ersteller)
