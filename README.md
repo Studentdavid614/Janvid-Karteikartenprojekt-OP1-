@@ -93,7 +93,8 @@ Wireframes / Mockups
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(1).png?raw=true)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Architektur
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Die Applikation folgt einer Layered Architecture mit klarer Trennung von Verantwortlichkeiten:
 ```text
 pizza_app/
 ├── __init__.py
@@ -122,6 +123,33 @@ pizza_app/
     └── pages.py
 ```
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Projektstruktur
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+```text
+app/
+├── main.py              # NiceGUI Routes und UI Pages
+├── models.py            # SQLModel Datenmodelle
+├── db.py                # Datenbank-Initialisierung
+├── auth.py              # Authentifizierung & Sicherheit
+├── services.py          # Business Logic
+├── pdf_export.py        # PDF-Generierung
+├── import_cards.py      # CSV/JSON Import
+└── seed_data.py         # Test-Datengenerator
+
+tests/
+├── test_models.py       # Model Unit Tests
+└── test_services.py     # Service Integration Tests
+
+requirements.txt         # Python Dependencies
+README.md                # User Guide
+DEVELOPMENT.md           # Entwickler-Dokumentation
+.env.example             # Umgebungsvariablen Template
+Dockerfile               # Container Image Definition
+docker-compose.yml       # Multi-Container Setup
+setup.py                 # Setup Automation Script
+```
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 🗄️ Database and ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
