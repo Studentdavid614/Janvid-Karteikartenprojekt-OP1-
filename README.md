@@ -95,7 +95,6 @@ Wireframes / Mockups
 Architektur
 
 Die Applikation folgt einer Layered Architecture mit klarer Trennung von Verantwortlichkeiten:
-
 Presentation Layer (NiceGUI Pages)
     ↓
 Application Layer (main.py)
@@ -105,79 +104,6 @@ Business Logic Layer (services.py)
 Data Access Layer (models.py, db.py, auth.py)
     ↓
 Database Layer (SQLite via SQLModel)
-Projektstruktur
-app/
-├── main.py              # NiceGUI Routes und UI Pages
-├── models.py            # SQLModel Datenmodelle
-├── db.py                # Datenbank-Initialisierung
-├── auth.py              # Authentifizierung & Sicherheit
-├── services.py          # Business Logic
-├── pdf_export.py        # PDF-Generierung
-├── import_cards.py      # CSV/JSON Import
-└── seed_data.py         # Test-Datengenerator
-
-tests/
-├── test_models.py       # Model Unit Tests
-└── test_services.py     # Service Integration Tests
-
-requirements.txt         # Python Dependencies
-README.md                # User Guide
-DEVELOPMENT.md           # Entwickler-Dokumentation
-.env.example             # Umgebungsvariablen Template
-Dockerfile               # Container Image Definition
-docker-compose.yml       # Multi-Container Setup
-setup.py                 # Setup Automation Script
-Lokale Installation
-Mit Virtual Environment (Empfohlen)
-Windows
-python -m venv venv
-venv\Scripts\activate
-pip install -r requirements.txt
-python -m app.main
-macOS / Linux
-python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python -m app.main
-Docker Setup
-# Docker Image bauen
-docker build -t karteikarten:latest .
-
-# Container starten
-docker run -p 8080:8080 karteikarten:latest
-
-# Mit Docker Compose
-docker-compose up -d
-Testing
-Unit Tests
-pytest tests/test_models.py -v
-pytest tests/test_services.py -v
-Alle Tests
-pytest tests/ -v
-Coverage Report
-pytest --cov=app tests/
-Environment Variables
-
-Erstelle eine .env Datei basierend auf .env.example.
-
-SECRET_KEY=your-secret-key-min-32-chars
-Sicherheitshinweise
-Niemals Passwörter im Klartext speichern
-HTTPS in Production verwenden
-SECRET_KEY regelmäßig rotieren
-SQLite nur für lokale Entwicklung verwenden
-Deployment Checklist
-
-Vor dem Production Deployment prüfen:
-
- SECRET_KEY ändern
- PostgreSQL statt SQLite konfigurieren
- HTTPS aktivieren
- Rate Limiting konfigurieren
- Logging aktivieren
- Backups konfigurieren
- Tests ausführen
- Code Review durchführen
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 🗄️ Database and ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
