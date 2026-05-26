@@ -14,7 +14,7 @@ Die Applikation beschäftigt sich hauptsächlich mit folgenden Dingen:
 
 📝 Anwenungsanforderungen des Projekts:
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Viele Schülerinnen und Schüler haben Probleme mit grossen Mengen an Unterrichtsstoff auswendig zu lernen. Dazu greien die meisten zu einer LernAPP. Grundsätzlich eine gute IDee jedoch besitzen viele LernApps nich über die gewünschten Funktionen oder sind Kostenpflichtig. Beides nicht optimal für einen Schüler/inn.
+Viele Schülerinnen und Schüler haben Probleme mit grossen Mengen an Unterrichtsstoff auswendig zu lernen. Dazu greien die meisten zu einer LernAPP. Grundsätzlich eine gute Idee jedoch besitzen viele LernApps nich über die gewünschten Funktionen oder sind Kostenpflichtig. Beides nicht optimal für einen Schüler/inn.
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Szenario
 Die Applikations gibt uns die Möglichkeit für:
