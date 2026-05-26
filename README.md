@@ -170,28 +170,30 @@ Datenbank-Modelle
 User
 Speichert Benutzerinformationen mit gehashtem Passwort.
 
-id: Primary Key
-username: Eindeutig, Index für schnelle Lookups
-email: Eindeutig für Registrierung
-password_hash: BCrypt Hash, niemals Klartext speichern!
-created_at: Audit-Trail
+- id: Primary Key
+- username: Eindeutig, Index für schnelle Lookups
+- email: Eindeutig für Registrierung
+- password_hash: BCrypt Hash, niemals Klartext speichern!
+- created_at: Audit-Trail
 Beziehungen:
 
-1:N CardSets (Ersteller)
-1:N SetPermissions (Empfänger)
-1:N LearningHistory (Lerner)
+- 1:N CardSets (Ersteller)
+- 1:N SetPermissions (Empfänger)
+- 1:N LearningHistory (Lerner)
+  
 CardSet
 Gruppiert zusammenhängende Karteikarten.
 
-id: Primary Key
-creator_id: Foreign Key zu User
-visibility: ENUM(PRIVATE, PUBLIC)
-created_at, updated_at: Audit-Trail
+- id: Primary Key
+- creator_id: Foreign Key zu User
+- visibility: ENUM(PRIVATE, PUBLIC)
+- created_at, updated_at: Audit-Trail
 Beziehungen:
 
-N:1 User (Ersteller)
-1:N Cards
-1:N SetPermissions
+- N:1 User (Ersteller)
+- 1:N Cards
+- 1:N SetPermissions
+----------------------------------------------------------------------------------------------
 🗄️ Database and ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
