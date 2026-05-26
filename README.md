@@ -1,4 +1,5 @@
-# Janvid-Karteikartenprojekt-OP1-
+![image_URL](C:\Users\David Lienhardt\Downloads\Bild.png)
+
 # OP1-Karteikarten
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Dieses Projekt zeigt den Aufbau einer webbasiertern Applikation konstruiert mit NiceGUI, fokussiert auf sauberer Architektur, Daten validierung und dem intergrieren von Datenbanken
