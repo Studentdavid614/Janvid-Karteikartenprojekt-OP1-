@@ -31,44 +31,44 @@ Die Applikations gibt uns die Möglichkeit für:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 📖 User Stories
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-1. LogIn
+1. LogIn:
 Als Benutzer richte ich mir ein eigens Konto ein mit einer Email und einem geschützten Passwort. Danach kann ich mich damit immer wieder ein und aus loggen.
 - Inputs: Email und Passwort
 - Outputs: None
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-2. View Menü
+2. View Menü:
 Als Benutzer dieser Applikation will ich als erstes das Hauptmenü sehen mit den darin enthaltenen Hauptfunktionen.
 - (Löschen, Bearbeiten, Hinzufügen, Lernen, Prüfen)
 - Inputs: None
 - Output: main functions
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-3. Hinzufügen von Karteikarten
+3. Hinzufügen von Karteikarten:
 Als Benutzer will ich meinen Lernstoff in Fomr von karteikarten hinzufügen.
 - Input: Karteikarten 
 - Output: Updated Karteikartenliste 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-4. Karten Listen erstellen
+4. Kartenlisten erstellen:
 Nachdem ich als Benutzer meine Karten erstellt habe um diese zu lernen oder zu prüfen, habe ich die Möglichkeit diese als Liste zu speichern um sie später wieder gezielt zu lernen ohne dass ich alle Karten zusammen lernen muss. ZUdem kann ich diese Liste dann mit anderen Benutzern teilen oder selbst die Listen von anderen Benutzern lernen.
 - Inputs: list.ID
 - Outputs: updated lists
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-5. View Menü to choose a mainfunction
+5. Menü sehen um Hauptfunktion zu wählen:
 Als Benutzer will ich nach dem hinzufügen meiner Karteikarten eine Liste sehen mit allen möglichen Hauptfunktionen.
 - Inputs: none
 - outputs: view mainfunctions
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-6. View Results
+6. Resultate ansehen:
 Als Benutzer will ich sehen wie meine Leistungen waren in den gewählten Hauptfunktionen wie lernen oder prüfen
 - Inputs: none
 - Outputs: results
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-7. Karteikarten zurücksetzen
+7. Karteikarten zurücksetzen:
 Als Benutzer will ich meine veralteten Karteikarten welche ich in den Modi (lernen und Prüfung) nicht mehr brauche, bearbeiten oder sogar löschen.
 - Inputs: mainfunction löschen, bearbeiten
 - Output: Updated Karteikartenliste txt.file
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-8. View Menü/ neue Karteikarten hinzufügen
-ALs Benutzer will ich nachdem meine alten Karteikarten gelöscht bzw. bearbeitet wurden neue Karteikarten hinzufügen.
+8. Neue Karteikarten hinzufügen:
+Als Benutzer will ich nachdem meine alten Karteikarten gelöscht bzw. bearbeitet wurden neue Karteikarten hinzufügen.
 - Input: mainfunction hinzufügen
 - output: updated Karteikartenliste 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -159,9 +159,6 @@ Dockerfile               # Container Image Definition
 docker-compose.yml       # Multi-Container Setup
 setup.py                 # Setup Automation Script
 ```
-```bash
-pytest tests/
-```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Beispiel für eine Teststruktur
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -177,6 +174,9 @@ def test_something(isolated_services):
     # Assert
     assert result is not None
     assert result.value == expected_value
+```
+```bash
+pytest tests/
 ```
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Datenbank-Modelle
@@ -215,6 +215,6 @@ SQLite + SQLModel
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 👥 Team & Contributions
 
-- David:   Nice GUI-Frontend, Routing, PDF-Export, Statistik Dashboard
+- David:   Nice GUI-Frontend, Routing, PDF-Export, Statistik-Dashboard
 - Jana: 	 Datenmodellierung, Service-Layer, Authentifizierung, Test-Framework
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
