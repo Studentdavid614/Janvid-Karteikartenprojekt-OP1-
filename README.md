@@ -78,6 +78,7 @@ Als Benutzer will ich nachdem meine alten Karteikarten gelöscht bzw. bearbeitet
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20USE%20CASES.png?raw=true)
 
 (Bild Use Cases)
+
 Main cases:
 - View Mainfunctions
   - Karteikarte Hinzufügen
