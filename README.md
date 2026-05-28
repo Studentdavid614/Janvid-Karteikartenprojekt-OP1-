@@ -92,6 +92,33 @@ Wireframes / Mockups
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(2).png?raw=true)
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(1).png?raw=true)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Tech Stack
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+```text
+Frontend
+- NiceGUI
+
+Backend
+- Python
+- FastAPI
+
+Database
+- SQLite
+- SQLModel
+- SQLAlchemy
+
+Authentication & Security
+- JWT Authentication
+- BCrypt Password Hashing
+
+Testing
+- Pytest
+
+Deployment & DevOps
+- Docker
+- Docker Compose
+```
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Architektur
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Die Applikation folgt einer Layered Architecture mit klarer Trennung von Verantwortlichkeiten:
@@ -132,6 +159,9 @@ Dockerfile               # Container Image Definition
 docker-compose.yml       # Multi-Container Setup
 setup.py                 # Setup Automation Script
 ```
+```bash
+pytest tests/
+```
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Beispiel für eine Teststruktur
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -160,25 +190,25 @@ Speichert Benutzerinformationen mit gehashtem Passwort.
 - password_hash: BCrypt Hash, niemals Klartext speichern!
 - created_at: Audit-Trail
 
-Beziehungen:
+```text
+User
+├── 1:N CardSets
+├── 1:N SetPermissions
+└── 1:N LearningHistory
 
-- 1:N CardSets (Ersteller)
-- 1:N SetPermissions (Empfänger)
-- 1:N LearningHistory (Lerner)
-  
 CardSet
-Gruppiert zusammenhängende Karteikarten.
+├── N:1 User
+├── 1:N Cards
+└── 1:N SetPermissions
 
-- id: Primary Key
-- creator_id: Foreign Key zu User
-- visibility: ENUM(PRIVATE, PUBLIC)
-- created_at, updated_at: Audit-Trail
+Card
+├── N:1 CardSet
+└── 1:N LearningHistory
+```
 
-Beziehungen:
-
-- N:1 User (Ersteller)
-- 1:N Cards
-- 1:N SetPermissions
+```text
+SQLite + SQLModel
+```
 ----------------------------------------------------------------------------------------------
 🗄️ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
