@@ -7,10 +7,10 @@ Dieses Projekt zeigt den Aufbau einer webbasierten Applikation konstruiert mit N
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Die Applikation beschäftigt sich hauptsächlich mit folgenden Dingen:
 
-- den gesamten Prozess von der Anforderungsanalyse bis zur Implementierung abzudecken
-- fortgeschrittene Python-Konzepte in einer webbasierten Anwendung anzuwenden
+- Den gesamten Prozess von der Anforderungsanalyse bis zur Implementierung abzudecken
+- Fortgeschrittene Python-Konzepte in einer webbasierten Anwendung anzuwenden
 - Datenvalidierung, eine geschichtete Architektur und den Einsatz eines ORMs zu demonstrieren
-- sauberen, wartbaren und gut getesteten und wartbaren Code zu erstellen
+- Sauberen, wartbaren und gut getesteten und wartbaren Code zu erstellen
 - Teamarbeit sowie professionelle Dokumentation zu unterstützen
 
 📝 Anwenungsanforderungen des Projekts:
