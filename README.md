@@ -92,7 +92,7 @@ Schauspieler:
 - User
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Wireframes / Mockups
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(2).png?raw=true)
 (Bild Konto erstellen)
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(1).png?raw=true)
