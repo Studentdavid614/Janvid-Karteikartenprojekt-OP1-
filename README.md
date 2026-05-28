@@ -1,4 +1,5 @@
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild.png?raw=true)
+(Bild Startseite)
 
 # OP1-Karteikarten
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -75,7 +76,7 @@ Als Benutzer will ich nachdem meine alten Karteikarten gelöscht bzw. bearbeitet
 🧩 Use Cases
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20USE%20CASES.png?raw=true)
-
+(Bild Use Cases)
 Main cases:
 - View Mainfunctions
   - Karteikarte Hinzufügen
@@ -90,7 +91,9 @@ Schauspieler:
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Wireframes / Mockups
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(2).png?raw=true)
+(Bild Konto erstellen)
 ![image_URL](https://github.com/Studentdavid614/Janvid-Karteikartenprojekt-OP1-/blob/main/Bild%20(1).png?raw=true)
+(Bild Lernmodi)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Tech Stack
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -212,6 +215,7 @@ SQLite + SQLModel
 ----------------------------------------------------------------------------------------------
 🗄️ORM
 ![image_URL](https://github.com/Studentdavid614/David---Jana-OP1-Karteikartensystem/blob/main/BILD%20ORM.png?raw=true)
+(Bild ORM)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 👥 Team & Contributions
 
